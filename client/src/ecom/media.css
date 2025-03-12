@@ -1,0 +1,477 @@
+@media only screen and (max-width: 1365px) {
+    header nav ul {
+        flex: 0.6;
+        display: flex !important;
+    }
+
+    .container {
+        padding: 1rem 0 !important;
+    }
+
+    .CartPayment {
+        padding: 0 !important;
+    }
+
+    .cartDiv {
+        gap: 4rem;
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+
+    .regButton{
+        width: 100% ;
+        margin-top: 2rem !important;
+        margin: 0 !important;
+    }
+
+}
+
+@media only screen and (max-width: 1250px) {
+    header nav ul {
+        display: none !important;
+    }
+
+    .navShowM .items ul {
+        flex: 1
+    }
+
+    .navShowM .items ul li a {
+        font-size: 1.5rem !important;
+    }
+
+    .navDropActive {
+        display: none !important;
+    }
+
+    .userName {
+        display: none !important;
+    }
+
+    .navDropHide {
+        display: none !important;
+    }
+
+    .liDiv {
+        display: flex !important;
+        gap: 3rem !important;
+        flex-direction: column;
+    }
+
+    .navMedia {
+        display: flex !important;
+        gap: 4rem !important;
+    }
+
+    nav {
+        z-index: 23;
+    }
+
+    .hamNav {
+        position: relative;
+        width: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        flex-direction: column;
+        padding: 0 0.5rem;
+        height: 2.5rem;
+        background: white;
+        z-index: 22;
+    }
+
+    .hamNav:hover span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .items ul li {
+        transition: all 200ms ease-in;
+    }
+
+    .items ul li a {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .items ul li:hover {
+        transform: scale(1.5) !important;
+    }
+
+    .items ul li::before {
+        content: "";
+        height: 0.1rem;
+        width: 0%;
+        background: white;
+        position: absolute;
+        bottom: 0;
+        transition: all 200ms ease-in-out;
+    }
+
+    .items ul li:hover::before {
+        content: "";
+        width: 100%;
+    }
+
+    .hamNav:hover span:nth-child(1) {
+        margin-top: 0.5rem;
+        transform: rotate(-45deg);
+    }
+
+    .hamNav:hover span:nth-child(3) {
+        margin-top: -1.5rem;
+        transform: rotate(45deg);
+    }
+
+    .navIcon span:nth-child(1) {
+        display: block;
+        height: 0.2rem;
+        width: 100%;
+        transition: all 200ms ease-in-out;
+        background: black;
+    }
+
+    .navIcon span:nth-child(2) {
+        display: block;
+        transition: all 200ms ease-in-out;
+        height: 0.2rem;
+        width: 100%;
+        background: black;
+    }
+
+    .navIcon span:nth-child(3) {
+        display: block;
+        transition: all 200ms ease-in-out;
+        height: 0.2rem;
+        width: 100%;
+        background: black;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .homeHeader {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .homeHeader h3 {
+        font-size: 1rem;
+    }
+
+    .items ul {
+        gap: 3rem !important;
+    }
+
+    .userLeft {
+        left: -10rem !important;
+    }
+
+    .specialA {
+        display: block;
+    }
+
+    .profileBox {
+        flex: 1 !important;
+    }
+}
+
+@media only screen and (max-width: 810px){
+    .CatHeader button{
+        font-size: 1.25rem !important;
+    }
+
+    tbody tr td{
+        padding: 1rem 0 1rem 1rem !important ;
+        font-size: 1.5rem !important;
+    }
+
+    tbody tr td div{
+        font-size: 1.25rem !important;
+        padding: 0.5rem !important;
+    }
+
+    tbody tr td div svg{
+        font-size: 5rem;
+    }
+}
+
+@media only screen and (max-width: 750px){
+
+    .CatHeader{
+        gap: 2rem;
+    }
+    .CatHeader button{
+        font-size: 1.25rem !important;
+    }
+
+    .CatHeader span{
+        font-size: 1.5rem !important;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+    .CatHeader span{
+        font-size: 1.25rem !important;
+    }
+
+    .ItemInfo {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 5rem 2rem 1rem !important;
+    }
+
+    .ItemInfo img {
+        max-width: 20rem;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .navShowM .items ul {
+        flex: 1
+    }
+
+    .navShowM .items ul li a {
+        font-size: 1.5rem !important;
+    }
+
+    .productBox a {
+        flex-direction: column;
+    }
+
+
+}
+
+@media only screen and (max-width: 450px) {
+
+    .CatHeader{
+        flex-direction: column;
+        padding: 1rem !important;
+    }
+
+    .regButton{
+        padding: 1rem !important;
+    }
+
+    .CreateProduct input{
+        padding: 0.5rem 1rem !important;
+    }
+
+    .CreateProduct textarea::placeholder{
+        font-size: 0.9rem;
+    }
+
+    .CreateProduct input::placeholder{
+        font-size: 0.9rem;
+    }
+
+    .ant-select-selection-placeholder{
+        font-size: 0.8rem !important;
+    }
+
+    .imageUpload{
+        width: 100% !important;
+    }
+
+    thead tr th{
+        padding: 0rem !important;
+        font-size: 1.25rem !important;
+    }
+
+    tbody tr{
+        flex-direction: column;
+        border-bottom: 1px solid var(--blackLight);
+    }
+
+    .catBtn{
+        padding: 0rem 0rem 0rem 1rem !important;
+        align-items: flex-start;
+        gap: 2rem;
+        margin-bottom: 1rem;
+        flex-direction: column;
+    }
+
+    .catBtn div svg{
+        font-size: 1rem;
+    }
+
+    .RegisterDiv {
+        width: 80% !important;
+    }
+
+    .spinBox {
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .spinBox h3 {
+        font-size: 1.75rem !important;
+    }
+
+    .items {
+        padding: 5rem 0 1rem !important;
+    }
+
+    .homeHeader {
+        align-items: flex-start !important;
+    }
+
+    .mainBtn {
+        font-size: 1.25rem !important;
+    }
+
+    .homeHeader h3 {
+        font-size: 1.75rem !important;
+    }
+
+    .box {
+        flex-direction: column;
+    }
+
+
+    .css-5wly58-MuiDataGrid-root {
+        padding: 0 !important;
+        border-radius: 1rem;
+    }
+
+    .MuiDataGrid-columnHeaders {
+        font-size: 1rem;
+    }
+
+    .MuiDataGrid-virtualScroller {
+        font-size: 0.75rem;
+    }
+
+    .productBox {
+        padding: 1rem !important;
+    }
+
+    .productImg {
+        width: 10rem !important;
+        height: 10rem !important;
+    }
+
+    .productData {
+        gap: 1rem;
+    }
+
+    .CartPayment {
+        flex: 1 !important;
+    }
+
+    .ItemInfo img {
+        max-height: 15rem !important;
+    }
+
+    .ItemDetails h3 {
+        font-size: 1.5rem;
+    }
+
+    .productBtn button {
+        justify-content: center;
+    }
+
+    .MuiDataGrid-virtualScrollerRenderZone > *{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .MuiDataGrid-virtualScrollerRenderZone div{
+        max-height: 20rem !important;
+        padding: 0 1rem !important;
+        border-bottom: 1px solid var(--Darkblack) !important;
+    }
+    .MuiDataGrid-virtualScrollerRenderZone div div {
+        max-width: 100% !important;
+        border: none !important;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    .navLogo {
+        font-size: 1.25rem;
+    }
+
+    .container {
+        padding: 0 !important;
+    }
+
+    .CartPayment {
+        padding: 0 !important;
+    }
+
+    .mainBtn {
+        font-size: 1rem;
+    }
+
+    .RegisterDiv {
+        margin: auto !important;
+        width: 80%;
+        padding: 2rem 0 !important;
+    }
+
+    .RegisterDiv form {
+        padding: 0 0 !important;
+        width: 80%;
+        align-items: flex-start;
+    }
+
+    .RegisterDiv form button{
+        width: 100% !important;
+    }
+
+    .RegisterDiv form label {
+        font-size: 1rem !important;
+    }
+
+    .RegisterDiv h3 {
+        font-size: 1.5rem !important;
+    }
+
+    .box label {
+        font-size: 1rem !important;
+    }
+
+    .dashHead {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .dashHead svg {
+        display: block;
+    }
+
+    .ItemInfo img {
+        max-height: 12rem !important;
+    }
+
+    .ItemDetails p {
+        font-size: 1.25rem;
+    }
+
+}
+
+@media only screen and (max-width: 250px) {
+
+    .RegisterDiv{
+        width: 50%;
+    }
+
+    .RegisterDiv form label {
+        font-size: 0.75rem !important;
+    }
+
+    .RegisterDiv h3 {
+        font-size: 1.25rem !important;
+    }
+
+    .mainBtn {
+        font-size: 0.9rem !important;
+    }
+
+    .ItemInfo img {
+        max-width: 11rem !important;
+    }
+}

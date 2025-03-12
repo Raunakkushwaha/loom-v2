@@ -78,6 +78,6 @@
     cursor: pointer
 }
 .chat-sender>div{
-    height: 70%;
+    height: 3rem;
     padding: 0px 15px 0px 15px;
 }

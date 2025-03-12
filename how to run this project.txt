@@ -1,0 +1,58 @@
+this have four files
+client-->frontend
+server-->socialmedia backend
+socket--> this is the connection file for chat application
+backend-->ecom backend
+
+?? incase of ecom online server not work 
+that push on github
+raunakkushwaha85@gmail.com
+hosted on Render
+
+:: backend file having ecom codes 
+to run-->
+change .env 
+to localhost
+
+backend-->
+cd backend
+npm i
+nodemon run server.js
+
+client-->
+cd client
+npm i
+yarn start
+
+server -->
+cd server 
+npm i
+yarn start
+
+socket-->
+cd socket
+npm i
+yarn start
+
+
+making chat application connection
+need api request application like thunderclient or postman
+
+
+POST -->  localhost:5000/chat/
+
+BODY--> JSON Content
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+{
+  "senderId":"67ca70c40e7507e8af3ecaee",
+  "receiverId":"675d8b770b6c685ca3dfc07d"
+}
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+database---->
+mongodb ---> mongoatlas
+id-raunac000@gmail.com
+
+collection
+cluster0-->loom

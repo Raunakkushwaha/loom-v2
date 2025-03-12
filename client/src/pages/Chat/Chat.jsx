@@ -3,6 +3,7 @@ import ChatBox from "../../components/ChatBox/ChatBox";
 import Conversation from "../../components/Coversation/Conversation";
 import LogoSearch from "../../components/LogoSearch/LogoSearch";
 import NavIcons from "../../components/NavIcons/NavIcons";
+import NavBar from "../../ecom/Components/NavBar";
 import "./Chat.css";
 import { useEffect } from "react";
 import { userChats } from "../../api/ChatRequests";
@@ -71,7 +72,8 @@ const Chat = () => {
     <div className="Chat">
       {/* Left Side */}
       <div className="Left-side-chat">
-        <LogoSearch />
+        {/* <LogoSearch /> */}
+        <NavBar/>
         <div className="Chat-container">
           <h2>Chats</h2>
           <div className="Chat-list">
@@ -96,7 +98,7 @@ const Chat = () => {
 
       <div className="Right-side-chat">
         <div style={{ width: "20rem", alignSelf: "flex-end" }}>
-          <NavIcons />
+          {/* <NavIcons /> */}
         </div>
         <ChatBox
           chat={currentChat}

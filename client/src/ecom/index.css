@@ -1,0 +1,441 @@
+  @import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Assistant&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    text-decoration: none;
+    color: black;
+    
+  }
+
+  :root {
+    --mainFont: 1.5rem;
+    --mainBigFont: 1.75rem;
+    --verySmallFont: 1rem;
+    --smallFont: 1.25rem;
+    --font1: 'Rubik', sans-serif;
+    --font2: 'Signika', sans-serif;
+    --font3: 'Assistant', sans-serif;
+    --black: linear-gradient(106.23deg, #f99827 0%, #f95f35 100%);
+    --blackHover: rgba(24, 24, 24, 0.1);
+    --Darkblack: rgb(41, 41, 41);
+    --veryLightBlack: hsla(0, 0%, 1%, 0.8);
+    --blackLight: #a8a8a8;
+    --white: #FAF9F6;
+    --white2: rgba(246, 254, 255, 0.904)6;
+  }
+
+  ::selection {
+    background: var(--black);
+    color: var(--white);
+  }
+
+  html,
+  body {
+    height: 100%;
+  }
+
+  html::-webkit-scrollbar {
+    width: 0.75rem;
+  }
+
+  html::-webkit-scrollbar-track {
+    background: var(--black);
+  }
+
+  html::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  html::-webkit-scrollbar-thumb:hover {
+    background: var(--blackLight);
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    padding: 0.5rem 2rem 0.2rem;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background: white;
+    z-index: 22;
+  }
+
+  .navClean {
+    background: var(--Darkblack);
+  }
+
+  .navShow {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .navShow .navLogo,
+  .navShow ul li a,
+  .navShow .searchBar input::placeholder {
+    color: var(--black);
+  }
+
+  .navShow .searchBar svg path {
+    color: var(--white);
+  }
+
+  .navShow .searchBar input {
+    border-bottom: 1px solid var(--black);
+  }
+
+  .navShow .searchBar svg {
+    background-color: var(--black);
+  }
+
+  .hamNav {
+    display: none;
+  }
+
+  .mainBtn {
+    color: #FAF9F6;
+    background: linear-gradient(106.23deg, #f99827 0%, #f95f35 100%);
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 150ms ease-out;
+  }
+
+  .loadBtn {
+    color: #FAF9F6;
+    background: #959ca0be;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 150ms ease-out;
+  }
+
+  .mainBtn svg path {
+    color: #FAF9F6;
+  }
+
+  .ItemDetails h3 {
+    font-size: var(--mainBigFont);
+    color: white;
+
+  }
+
+  .ItemDetails p {
+    font-size: var(--mainFont);
+    color: white;
+  }
+
+  .mainBtn a {
+    color: #FAF9F6;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mainBtn:hover {
+    transform: scale(1.1)
+  }
+
+  .navLogo {
+    font-size: 1.75rem;
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+    color: var(--white);
+    font-weight: 700;
+  }
+
+  .searchBar {
+    display: flex;
+    gap: 0.25rem;
+    align-items: center;
+  }
+
+  .searchBar input {
+    border: none;
+    background: transparent;
+    outline: none;
+    color: var(--white);
+    font-size: var(--smallFont);
+    border-bottom: 1px solid var(--white);
+    padding: 0 1rem;
+  }
+
+  .searchBar input::placeholder {
+    color: var(--white);
+  }
+
+  .searchBar svg {
+    background: var(--black);
+    font-size: var(--mainBigFont);
+  }
+
+  .searchBar svg path {
+    color: var(--white);
+  }
+
+  .navHideM {
+    position: absolute;
+    height: 100vh;
+    top: -100rem;
+    left: 0;
+    right: 0;
+  }
+
+  .navShowM {
+    display: flex;
+    position: absolute;
+    min-height: 100vh;
+    background: var(--veryLightBlack);
+    backdrop-filter: blur(10px);
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 22;
+  }
+
+  header ul {
+    display: flex;
+    flex: 0.5;
+    font-size: 1.25rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header ul li {
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Signika', sans-serif;
+  }
+
+  header ul li:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header ul li a {
+    color: var(--white);
+    letter-spacing: 0.05rem;
+  }
+
+  .navDropHide {
+    display: none !important;
+  }
+
+  .filterDisplay {
+    display: block;
+  }
+
+  .navUser a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navMedia {
+    display: none !important;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+
+  .navDropActive {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: white;
+    padding: 1rem 2rem 1.5rem;
+    border-radius: 1rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+
+  .navDropActive li {
+    margin-top: 1rem;
+    padding: 0 0 .5rem;
+    border-bottom: 1px solid rgba(56, 55, 55, 0.753);
+  }
+
+  .navDropActive li a {
+    color: var(--black);
+  }
+
+  .container {
+    width: 80%;
+    margin: auto;
+    padding: 2rem;
+  }
+
+  footer {
+    width: 100%;
+    color: white;
+    text-align: center;
+    background: linear-gradient(to right, #434343 0%, black 100%);
+  }
+
+  main {
+    min-height: 100vh;
+  }
+
+  .specialA {
+    display: none;
+  }
+
+  .regButton {
+    padding: 1rem;
+    outline: none;
+    border: 1px solid white;
+    background: var(--blackLight);
+    font-size: 1.25rem;
+    margin-top: 2rem;
+    color: var(--black);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+  }
+
+  .regButton:hover {
+    color: #FAF9F6;
+    background: #36454F;
+  }
+
+  .Catdetails {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+
+  .CategoryTable {
+    width: 100%;
+    display: flex;
+    row-gap: 2rem;
+    flex-direction: column;
+    padding: 0 0 2rem;
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+  }
+
+  .CategoryTable thead {
+    font-size: 1.75rem;
+    border-bottom: 1px solid rgba(78, 77, 77, 0.329);
+    width: inherit;
+  }
+
+  thead tr {
+    display: flex;
+    justify-content: space-evenly;
+    width: inherit;
+  }
+
+  thead tr th {
+    padding: 1rem 0 1rem 3rem;
+    width: inherit;
+    display: inherit;
+  }
+
+  .CategoryTable tbody {
+    font-size: 1.5rem;
+    width: inherit;
+  }
+
+  tbody tr {
+    text-transform: capitalize;
+    display: flex;
+    width: inherit;
+    justify-content: space-evenly;
+  }
+
+  tbody tr td {
+    padding: 1rem 0 1rem 3rem;
+    width: inherit;
+    display: flex;
+    align-items: center;
+    font-size: 1.75rem;
+  }
+
+  .dashHead svg {
+    display: none;
+  }
+
+  .dashVisible {
+    min-height: inherit;
+    backdrop-filter: blur(10px);
+    background: rgb(45 45 45 / 82%);
+    --webkit-backdrop-filter: blur(17px);
+    position: fixed;
+    top: 0;
+    left: 0 !important;
+  }
+
+  /* ======================================================================= MUI ================================================================== */
+  .css-5wly58-MuiDataGrid-root {
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+  }
+
+  .MuiDataGrid-columnHeaders {
+    font-size: 1.3rem;
+  }
+
+  .MuiDataGrid-virtualScroller {
+    font-size: 1rem;
+  }
+
+  .selector {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    height: 5rem;
+    padding: 1rem;
+  }
+
+  .selector input {
+    font-size: 1.25rem;
+  }
+
+  .ant-select-item-option-content {
+    font-size: var(--smallFont);
+  }
+
+  .ant-select-selection-placeholder,
+  .ant-select-selection-item {
+    font-size: var(--smallFont);
+  }
+
+  .CreateProduct .inputProduct::placeholder {
+    opacity: 0.5;
+  }
+
+  .actionBtn {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  .box {
+    background: white !important;
+    padding: 2rem;
+  }
+
+  .userActive {
+    background: var(--blackLight);
+  }

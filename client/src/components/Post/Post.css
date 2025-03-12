@@ -1,22 +1,25 @@
-.Post
-{
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    background-color: var(--cardColor);
-    border-radius: 1rem;
-    gap: 1rem;
+.postActions {
+  display: flex;
+  gap: 10px;
+  margin-top: 1 rem;
 }
 
-.Post>img{
-    width: 100%;
-    max-height: 20rem;
-    object-fit: cover;
-    border-radius: 0.5rem;
+
+
+.edit {
+  /* width: 100%; Full width */
+  /* max-width: 90vw; Limits width to 90% of viewport */
+  /* padding: 10px; */
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow-x: auto; /* Enables horizontal scrolling */
 }
 
-.postReact{
-    display: flex;
-    align-items: flex-start;
-    gap: 1.5rem;
+.edit {
+  border-color: orange; /* Highlight on focus */
+  box-shadow: 0 0 5px rgba(255, 88, 22, 0.5);
 }

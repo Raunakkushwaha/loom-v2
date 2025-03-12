@@ -1,27 +1,31 @@
 import React, { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { useParams } from "react-router-dom";
 import { getTimelinePosts } from "../../actions/PostsAction";
 import Post from "../Post/Post";
-import { useSelector, useDispatch } from "react-redux";
 import "./Posts.css";
-import { useParams } from "react-router-dom";
 
 const Posts = () => {
-  const params = useParams()
+  const params = useParams();
   const dispatch = useDispatch();
   const { user } = useSelector((state) => state.authReducer.authData);
-  let { posts, loading } = useSelector((state) => state.postReducer);
+  const { posts, loading, error } = useSelector((state) => state.postReducer);
+
   useEffect(() => {
-    dispatch(getTimelinePosts(user._id));
-  }, []);
-  if(!posts) return 'No Posts';
-  if(params.id) posts = posts.filter((post)=> post.userId===params.id)
+    if (user?._id) {
+      dispatch(getTimelinePosts(user._id));
+    }
+  }, [dispatch, user?._id]); // Added dependency for proper updates
+
+  if (loading) return <p>Fetching posts...</p>;
+  if (error) return <p>Error fetching posts!</p>;
+  if (!posts || posts.length === 0) return <p>No Posts Available</p>;
+
   return (
     <div className="Posts">
-      {loading
-        ? "Fetching posts...."
-        : posts.map((post, id) => {
-            return <Post data={post} key={id} />;
-          })}
+      {posts.map((post, id) => (
+        <Post data={post} key={id} />
+      ))}
     </div>
   );
 };
